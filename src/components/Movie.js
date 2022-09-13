@@ -1,10 +1,12 @@
+import React from 'react'
+import ReactDOM from 'react-dom'
 import { useDispatch } from "react-redux";
 import { Link } from "react-router-dom";
 import { addProduct } from "../actions/cart";
 
 export function Movie({ movieId, movieTitle, overview, img }) {
 
-	const dispatcher = useDispatch();
+	//const dispatcher = useDispatch();
 
 	return (
 		<>
@@ -20,9 +22,9 @@ export function Movie({ movieId, movieTitle, overview, img }) {
 					</div>
 				</div>
 
-				<button onClick={() => dispatcher(addProduct({ movieTitle, overview }))}>
+				{/* <button onClick={() => dispatcher(addProduct({ movieId, movieTitle, overview }))}>
 					Add to cart
-				</button>
+				</button> */}
 			</div>
 		</>
 	)

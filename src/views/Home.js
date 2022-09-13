@@ -1,3 +1,5 @@
+import React from 'react'
+import ReactDOM from 'react-dom'
 import { useEffect, useState } from "react";
 import { MoviesList } from "../components/MoviesList";
 import { MoviesService } from "../services/MoviesService";
